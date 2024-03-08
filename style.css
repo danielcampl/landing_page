@@ -24,8 +24,15 @@ body {
     height: 100vh;
     padding: 40px 400px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+}
+
+header {
+    height: 20vh;
+}
+
+main {
+    height: 70vh;
 }
 
 a {
@@ -168,7 +175,6 @@ box-icon {
 
 footer {
     width: 100%;
-    height: 20px;
     font-size: 14px;
     padding: 10px;
     margin-top: 20px;
@@ -176,12 +182,25 @@ footer {
     bottom: 0;
     display: flex;
     justify-content: space-around;
+    height: 10vh;
 }
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 468px) {
     body {
         padding: 0;
+    }
+
+    header {
+        height: 20vh;
+    }
+
+    main {
+        height: 70vh;
+    }
+
+    footer {
+        height: 10vh;
     }
 
     .top-page {
@@ -207,7 +226,6 @@ footer {
     }
 
     .about-container {
-        padding-top: 200px;
         gap: 80px;
     }
 
@@ -245,6 +263,18 @@ footer {
         padding: 10px 80px;
     }
 
+    header {
+        height: 20vh;
+    }
+
+    main {
+        height: 70vh;
+    }
+
+    footer {
+        height: 10vh;
+    }
+
     .top-page {
         justify-content: space-around;
     }
@@ -264,13 +294,11 @@ footer {
     }
 
     img {
-        /* display: none; */
         width: 140px;
         height: 280px;
     }
 
     .about-container {
-        padding-top: 200px;
         gap: 80px;
     }
 
@@ -305,7 +333,19 @@ footer {
 
 @media (min-width: 769px) and (max-width: 1024px) {
     body {
-        padding: 10px 80px;
+        padding: 10px 90px;
+    }
+
+    header {
+        height: 20vh;
+    }
+
+    main {
+        height: 70vh;
+    }
+
+    footer {
+        height: 10vh;
     }
 
     .top-page {
@@ -327,13 +367,11 @@ footer {
     }
 
     img {
-        /* display: none; */
         width: 180px;
         height: 360px;
     }
 
     .about-container {
-        padding-top: 200px;
         gap: 80px;
     }
 
