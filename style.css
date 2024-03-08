@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +11,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
+:root {
     --primary: #ff8800;
     --secundary: #ff7b00;
     --terciary: #ffaa00;
@@ -19,50 +19,57 @@
     --black: #202020;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     padding: 40px 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-a{
+a {
     text-decoration: none;
     outline-color: transparent;
 }
-li a{
+
+li a {
     color: var(--black);
 }
-button a{
+
+button a {
     color: var(--white);
 }
 
-h1{
+h1 {
     font-size: 38px;
 }
 
-.search-container{
+.search-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
-.search-input{
+
+.search-input {
     border: none;
     border-bottom: 1px solid #d6ccc2;
     padding: 5px 10px;
 }
 
-.top-page{
+.top-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 0;
 }
-.top-page h1 span{
+
+.top-page h1 span {
     color: var(--primary);
 }
 
-.top-nav-list ul{
+.top-nav-list ul {
     border-top: 1px solid #edede9;
     width: 100%;
     display: flex;
@@ -74,19 +81,16 @@ h1{
     font-family: "Outfit", sans-serif;
     font-size: 600;
 }
-.top-nav-list ul li a{
+
+.top-nav-list ul li a {
     transition: all 0.5s;
 }
-.top-nav-list ul li a:hover{
+
+.top-nav-list ul li a:hover {
     color: var(--primary);
 }
 
-/* main{
-    width: 100%;
-    height: 100vh;
-} */
-
-.about-container{
+.about-container {
     padding-top: 50px;
     width: 100%;
     height: 70%;
@@ -95,29 +99,33 @@ h1{
     align-items: center;
     gap: 80px;
 }
-.about-container div{
+
+.about-container div {
     width: 454px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.about-container div h4{
+
+.about-container div h4 {
     font-size: 18px;
     color: var(--secundary);
     font-family: "Outfit", sans-serif;
 }
-.about-container div p{
+
+.about-container div p {
     font-size: 34px;
     font-weight: 800;
     font-family: "Outfit", sans-serif;
     width: 400px;
 }
-.about-container div span{
+
+.about-container div span {
     font-size: 16px;
     font-family: "Outfit", sans-serif;
 }
 
-button{
+button {
     margin-top: 15px;
     padding: 15px 10px;
     width: 168px;
@@ -130,34 +138,35 @@ button{
     transition: all 0.5s;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: var(--terciary);
 }
 
-.recipes-container{
+.recipes-container {
     padding-top: 50px;
     width: 100%;
     height: 70%;
 }
 
-.contact-container{
+.contact-container {
     padding-top: 30px;
     width: 100%;
     height: 40%;
 }
 
-img{
+img {
     width: 310px;
     height: 583px;
     transform: rotate(8deg);
 }
 
-box-icon{
+box-icon {
     width: 25px;
     height: 25px;
 }
 
-footer{
+footer {
     width: 100%;
     height: 20px;
     font-size: 14px;
@@ -167,4 +176,192 @@ footer{
     bottom: 0;
     display: flex;
     justify-content: space-around;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 468px) {
+    body {
+        padding: 0;
+    }
+
+    .top-page {
+        justify-content: space-around;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .search-input {
+        padding: 5px 10px;
+        width: 120px;
+    }
+
+    .top-nav-list ul {
+        font-size: 15px;
+        justify-content: center;
+    }
+
+    img {
+        display: none;
+    }
+
+    .about-container {
+        padding-top: 200px;
+        gap: 80px;
+    }
+
+    .about-container div {
+        width: 280px;
+        gap: 20px;
+    }
+
+    .about-container div h4 {
+        font-size: 16px;
+    }
+
+    .about-container div p {
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .about-container div span {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+        width: 130px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 469px) and (max-width: 768px) {
+    body {
+        padding: 10px 80px;
+    }
+
+    .top-page {
+        justify-content: space-around;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .search-input {
+        padding: 5px 10px;
+        width: 130px;
+    }
+
+    .top-nav-list ul {
+        font-size: 15px;
+        justify-content: center;
+    }
+
+    img {
+        /* display: none; */
+        width: 140px;
+        height: 280px;
+    }
+
+    .about-container {
+        padding-top: 200px;
+        gap: 80px;
+    }
+
+    .about-container div {
+        width: 180px;
+        gap: 20px;
+    }
+
+    .about-container div h4 {
+        font-size: 14px;
+    }
+
+    .about-container div p {
+        font-size: 26px;
+        width: 300px;
+    }
+
+    .about-container div span {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+        width: 130px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        padding: 10px 80px;
+    }
+
+    .top-page {
+        justify-content: space-around;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .search-input {
+        padding: 5px 10px;
+        width: 150px;
+    }
+
+    .top-nav-list ul {
+        font-size: 15px;
+        justify-content: center;
+    }
+
+    img {
+        /* display: none; */
+        width: 180px;
+        height: 360px;
+    }
+
+    .about-container {
+        padding-top: 200px;
+        gap: 80px;
+    }
+
+    .about-container div {
+        width: 270px;
+        gap: 20px;
+    }
+
+    .about-container div h4 {
+        font-size: 16px;
+    }
+
+    .about-container div p {
+        font-size: 28px;
+        width: 300px;
+    }
+
+    .about-container div span {
+        font-size: 15px;
+    }
+
+    button {
+        padding: 15px;
+        width: 150px;
+        font-size: 15px;
+    }
+
+    footer {
+        font-size: 11px;
+    }
 }
