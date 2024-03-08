@@ -227,6 +227,7 @@ footer {
 
     .about-container {
         gap: 80px;
+        padding-top: 130px;
     }
 
     .about-container div {
